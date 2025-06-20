@@ -7,8 +7,11 @@ import Contact from "../components/Contact";
 export default function Home() {
   return (
     <>
-      <main className="space-y-24">
-        <Hero id="hero" />
+      {/* Full-width hero section */}
+      <Hero id="hero" />
+
+      {/* Card container for all other sections */}
+      <main className="relative z-10 max-w-5xl mx-auto bg-white text-foreground rounded-2xl shadow-xl px-6 md:px-12 py-16 space-y-24">
         <Clients id="clients" />
         <Samples id="samples" />
         <Testimonials id="testimonials" />
